@@ -8,3 +8,15 @@ In digital electronics, especially computing, hardware registers are circuits ty
 The ability to read or write multiple bits at a time, and
 Using an address to select a particular register in a manner similar to a memory address.
 
+3.高低电平复位
+原理：https://blog.csdn.net/as480133937/article/details/123530049?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166493442416782391857984%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=166493442416782391857984&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-123530049-null-null.142^v51^control,201^v3^control_2&utm_term=%E4%BD%8E%E7%94%B5%E5%B9%B3%E5%A4%8D%E4%BD%8D&spm=1018.2226.3001.4187
+negedge reset : 低电平复位
+
+数字电路中寄存器和 RAM 在上电之后默认的状态和数据是不确定的，如果有复位，我们可以把寄存器复位到初始状态，RAM 的数据可以通过复位来触发 RAM 初始化
+程序逻辑如果进入了错误的状态，通过复位可以把所有的逻辑状态恢复到初始值，如果没有复位，那么逻辑可能永远运行在错误的状态。(一些简单的IC芯片没有看门狗电路，就需要外部复位)
+
+
+4.为什么一般是 posedge clk
+https://blog.csdn.net/Xiaomo_haa/article/details/104188681?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166493476016782395370439%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=166493476016782395370439&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-3-104188681-null-null.142^v51^control,201^v3^control_2&utm_term=posedge%20clk&spm=1018.2226.3001.4187
+
+
