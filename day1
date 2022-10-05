@@ -1,0 +1,10 @@
+1. reg always 与 wire assign 的区别
+https://blog.csdn.net/u013025203/article/details/53410715
+
+
+2.What is a hardware register
+In digital electronics, especially computing, hardware registers are circuits typically composed of flip flops, often with many characteristics similar to memory, such as:
+
+The ability to read or write multiple bits at a time, and
+Using an address to select a particular register in a manner similar to a memory address.
+
